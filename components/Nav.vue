@@ -6,17 +6,19 @@
     >
       <nav class="h-full">
         <ul
-          class="justify-center flex flex-col space-y-8 text-lg font-bold m-4 h-full text-center text-5xl"
+          class="justify-center flex flex-col space-y-8 font-bold m-4 h-full text-center"
         >
           <li @click="store.closeMenu">
-            <NuxtLink to="/" class="display text-white hover:text-[#50b0ae]"
+            <NuxtLink
+              to="/"
+              class="display text-5xl text-white hover:text-[#50b0ae]"
               >Blog</NuxtLink
             >
           </li>
           <li @click="store.closeMenu">
             <NuxtLink
               to="/music"
-              class="display text-white hover:text-[#50b0ae]"
+              class="display text-5xl text-white hover:text-[#50b0ae]"
               >Music</NuxtLink
             >
           </li>
