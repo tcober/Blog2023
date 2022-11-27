@@ -1,0 +1,46 @@
+<template>
+  <transition>
+    <div
+      v-if="store.nav"
+      class="w-full sm:w-1/3 fixed bottom-0 top-0 bg-black z-30"
+    >
+      <nav class="h-full">
+        <ul
+          class="justify-center flex flex-col space-y-8 text-lg font-bold m-4 h-full text-center text-5xl"
+        >
+          <li @click="store.closeMenu">
+            <NuxtLink to="/" class="display text-white hover:text-[#50b0ae]"
+              >Blog</NuxtLink
+            >
+          </li>
+          <li @click="store.closeMenu">
+            <NuxtLink
+              to="/music"
+              class="display text-white hover:text-[#50b0ae]"
+              >Music</NuxtLink
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </transition>
+</template>
+
+<script setup>
+import { useNavStore } from "~/store/nav";
+let store = useNavStore();
+</script>
+
+<style scoped>
+.v-enter-active,
+.v-leave-active {
+  transition: all 0.5s ease;
+  @apply left-0;
+}
+
+.v-enter-from,
+.v-leave-to {
+  transition: all 0.5s ease;
+  @apply -left-full sm:-left-1/3;
+}
+</style>
