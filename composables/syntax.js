@@ -11,6 +11,7 @@ export function useSyntax() {
   hljs.registerLanguage("vue", xml);
   hljs.registerLanguage("javascript", javascript);
   hljs.registerLanguage("json", json);
+  hljs.registerLanguage("css", css);
   hljs.configure({
     languages: ["javascript", "vue", "json", "css"],
   });
