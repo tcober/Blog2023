@@ -29,5 +29,4 @@ const { data } = await storyblokApi.get("cdn/stories", {
   is_startpage: false,
 });
 articles.value = data.stories;
-console.log(articles);
 </script>
