@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Merriweather:wght@400;900&family=PT+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Merriweather:wght@300;400;900&family=PT+Mono&display=swap");
 
 p,
 h1,
@@ -27,7 +27,11 @@ h6 {
 
 p {
   font-family: "Merriweather", serif;
-  @apply py-2 text-lg;
+  @apply py-2 text-lg  font-light;
+}
+
+p img {
+  @apply my-4 mb-8;
 }
 
 pre {
@@ -54,6 +58,14 @@ a:hover {
   @apply text-orange-400;
 }
 
+.article h2 {
+  @apply text-4xl py-6;
+}
+
 .function_ {
   color: rgb(175, 211, 255) !important;
+}
+
+code {
+  @apply bg-blue-800 text-yellow-100 px-2 py-1;
 }

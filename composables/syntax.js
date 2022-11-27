@@ -1,4 +1,3 @@
-// mouse.js
 import { onMounted } from "vue";
 import hljs from "highlight.js/lib/core";
 import javascript from "highlight.js/lib/languages/javascript";
@@ -16,7 +15,6 @@ export function useSyntax() {
   });
 
   // a composable can also hook into its owner component's
-  // lifecycle to setup and teardown side effects.
   onMounted(() => {
     hljs.highlightAll();
   });
