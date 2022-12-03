@@ -26,7 +26,7 @@ const storyblokApi = useStoryblokApi();
 const { data } = await storyblokApi.get("cdn/stories", {
   version: "draft",
   starts_with: "blog",
-  is_startpage: true,
+  is_startpage: false,
 });
 articles.value = data.stories;
 </script>
