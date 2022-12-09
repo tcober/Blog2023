@@ -4,6 +4,8 @@ export default defineNuxtConfig({
   generate: {
     fallback: true,
   },
+  target: "static",
+  css: ["@/assets/css/main.css"],
   modules: [
     [
       "@storyblok/nuxt",
@@ -11,7 +13,6 @@ export default defineNuxtConfig({
         accessToken: process.env.STORYBLOK_TOKEN,
         apiOptions: { region: "us" },
         useApiClient: true,
-        bridge: true,
       },
     ],
     [
@@ -20,8 +21,7 @@ export default defineNuxtConfig({
         autoImports: ["defineStore"],
       },
     ],
+    "@nuxt/image-edge",
     "@nuxtjs/tailwindcss",
   ],
-  target: "static",
-  css: ["@/assets/css/main.css"],
 });

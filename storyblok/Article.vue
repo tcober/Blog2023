@@ -1,10 +1,11 @@
 <template>
   <div v-editable="blok">
-    <img
+    <nuxt-img
       v-if="blok.show_hero"
       :src="blok.image.filename + '/m/1600x0'"
       :alt="blok.image.alt"
       class="w-full h-[360px] lg:h-[450px] object-cover"
+      placeholder
     />
     <div class="container px-5 sm:mx-auto mb-12">
       <h1 class="text-6xl font-bold mt-12 mb-4">

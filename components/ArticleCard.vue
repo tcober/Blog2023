@@ -1,6 +1,6 @@
 <template>
   <NuxtLink
-    :to="'/' + slug"
+    :to="`/${slug}/`"
     v-editable="article"
     class="w-full min-h-[500px] relative bg-[#fdf7f6] rounded-[5px] text-center overflow-hidden flex items-end justify-center"
   >
@@ -15,10 +15,11 @@
         {{ renderedDate }}
       </h4>
     </div>
-    <img
-      :src="article.image.filename + '/m/600x0'"
+    <nuxt-img
+      :src="article.image.filename"
       :alt="article.image.alt"
       class="absolute top-0 left-0 z-0 w-full h-full object-cover"
+      placeholder
     />
   </NuxtLink>
 </template>
