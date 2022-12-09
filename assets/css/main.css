@@ -27,15 +27,15 @@ h6 {
 
 p {
   font-family: "Merriweather", serif;
-  @apply py-2 text-lg  font-light;
+  @apply pb-2 text-lg  font-light;
 }
 
 p img {
-  @apply my-4 mb-8;
+  @apply mb-8 mt-6;
 }
 
 pre {
-  @apply my-8;
+  @apply mb-8 mt-6;
 }
 
 pre,
@@ -51,15 +51,15 @@ code {
 }
 
 a {
-  @apply text-orange-600;
+  @apply text-sky-500;
 }
 
 a:hover {
-  @apply text-orange-400;
+  @apply text-sky-600;
 }
 
 .article h2 {
-  @apply text-4xl py-6;
+  @apply text-4xl pb-6 pt-2;
 }
 
 .function_ {
