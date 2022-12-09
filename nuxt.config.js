@@ -1,5 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  transition: "page",
+  generate: {
+    fallback: true,
+  },
   modules: [
     [
       "@storyblok/nuxt",
@@ -18,7 +22,6 @@ export default defineNuxtConfig({
     ],
     "@nuxtjs/tailwindcss",
   ],
-  ssr: false,
   target: "static",
   css: ["@/assets/css/main.css"],
 });
