@@ -15,13 +15,6 @@
         {{ blok.teaser }}
       </h2>
       <div v-html="resolvedRichText" class="my-2 article"></div>
-      <disqus
-        class="max-w-screen-md m-auto py-10"
-        ref="disqus"
-        v-bind:shortname="'thomascober-com'"
-        :identifier="blok.title"
-        lang="en"
-      ></disqus>
     </div>
   </div>
 </template>
