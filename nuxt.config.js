@@ -21,6 +21,7 @@ export default defineNuxtConfig({
         autoImports: ["defineStore"],
       },
     ],
+    "@nuxtjs/robots",
     "@nuxt/image-edge",
     "@nuxtjs/tailwindcss",
   ],

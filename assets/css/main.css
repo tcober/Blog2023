@@ -51,11 +51,11 @@ code {
 }
 
 a {
-  @apply text-sky-500;
+  @apply text-violet-700;
 }
 
 a:hover {
-  @apply text-sky-600;
+  @apply text-violet-800;
 }
 
 .article h2 {

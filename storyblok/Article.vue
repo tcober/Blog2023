@@ -21,11 +21,17 @@
 
 <script setup>
 import { useSyntax } from "~/composables/syntax.js";
-
 const props = defineProps({ blok: Object });
 const resolvedRichText = computed(() => renderRichText(props.blok.content));
 
-//If code block exists use syntax highlighting
+useHead({
+  title: props.blok.title,
+  meta: [{ name: "description", content: props.blok.teaser }],
+  bodyAttrs: {
+    class: "blog",
+  },
+});
+
 let codeBlocks = props.blok.content.content.find((content) => {
   return content.type === "code_block";
 });

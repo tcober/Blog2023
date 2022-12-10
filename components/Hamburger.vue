@@ -2,13 +2,14 @@
   <header class="z-50 h-10 w-12">
     <div class="nav-container">
       <input
+        id="menu"
         class="checkbox"
         type="checkbox"
         name="menu"
-        id="menu"
         v-model="isMenuOn"
+        aria-label="Menu"
       />
-      <div class="hamburger-lines">
+      <div for="menu" class="hamburger-lines">
         <span class="line line1 drop-shadow-xl"></span>
         <span class="line line2 drop-shadow-xl"></span>
         <span class="line line3 drop-shadow-xl"></span>

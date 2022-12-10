@@ -18,6 +18,21 @@
   </div>
 </template>
 
+<script setup>
+useHead({
+  title: "Thomas Cober's music",
+  meta: [
+    {
+      name: "description",
+      content: "Some music from bands and solo projects from a long time ago.",
+    },
+  ],
+  bodyAttrs: {
+    class: "music",
+  },
+});
+</script>
+
 <style scoped>
 iframe {
   width: 100%;
