@@ -8,7 +8,7 @@
       placeholder
     />
     <div class="container px-5 sm:mx-auto mb-12">
-      <h1 class="text-6xl font-bold mt-12 mb-4">
+      <h1 class="text-6xl font-bold mt-12 mb-5">
         {{ blok.title }}
       </h1>
       <h2 class="text-4xl text-[#1d243d] font-light mb-4">

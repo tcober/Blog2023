@@ -27,15 +27,15 @@ h6 {
 
 p {
   font-family: "Merriweather", serif;
-  @apply pb-2 text-lg  font-light;
+  @apply pb-4 text-lg  font-light;
 }
 
 p img {
-  @apply mb-8 mt-6;
+  @apply mb-8 mt-4;
 }
 
 pre {
-  @apply mb-8 mt-6;
+  @apply mb-8 mt-4;
 }
 
 pre,
