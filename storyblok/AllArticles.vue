@@ -25,7 +25,6 @@ const articles = ref(null);
 const storyblokApi = useStoryblokApi();
 const runtimeConfig = useRuntimeConfig();
 let local = runtimeConfig.local;
-console.log(local);
 
 const { data } = await storyblokApi.get("cdn/stories", {
   version: local === "true" ? "draft" : "public",

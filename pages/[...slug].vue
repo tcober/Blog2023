@@ -2,7 +2,7 @@
 const runtimeConfig = useRuntimeConfig();
 const { slug } = useRoute().params;
 let local = runtimeConfig.local;
-console.log(local);
+useCookie(undefined, { sameSite: true });
 
 useHead({
   link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],

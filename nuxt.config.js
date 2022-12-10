@@ -2,9 +2,6 @@
 export default defineNuxtConfig({
   transition: "page",
   buildEnvironment: process.env.BUILD_ENV,
-  privateRuntimeConfig: {
-    buildType: process.env.BUILD_ENV,
-  },
   runtimeConfig: {
     public: {
       local: process.env.LOCAL,
@@ -14,6 +11,7 @@ export default defineNuxtConfig({
     fallback: true,
   },
   target: "static",
+  ssr: false,
   css: ["@/assets/css/main.css"],
   modules: [
     [
