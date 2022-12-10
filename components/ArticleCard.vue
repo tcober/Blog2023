@@ -5,10 +5,12 @@
     class="w-full min-h-[500px] relative bg-[#fdf7f6] rounded-[5px] text-center overflow-hidden flex items-end justify-center"
   >
     <div class="relative z-10 w-full text-center py-6 bottom-2">
-      <h2 class="drop-shadow-xl text-4xl text-white display font-bold">
+      <h2 class="drop-shadow-xl text-4xl text-white display font-bold mb-1">
         {{ article.title }}
       </h2>
-      <h3 class="text-xl drop-shadow-xl line-clamp-4 font-light text-white">
+      <h3
+        class="max-w-lg text-xl drop-shadow-xl line-clamp-4 font-light text-white"
+      >
         {{ article.teaser }}
       </h3>
       <h4 class="text-xs drop-shadow-xl mt-1 text-white font-light">

@@ -23,8 +23,11 @@
 defineProps({ blok: Object });
 const articles = ref(null);
 const storyblokApi = useStoryblokApi();
+const runtimeConfig = useRuntimeConfig();
+console.log(runtimeConfig.buildType);
+
 const { data } = await storyblokApi.get("cdn/stories", {
-  version: "draft",
+  version: runtimeConfig.buildType === "local" ? "draft" : "public",
   starts_with: "blog",
   is_startpage: false,
 });

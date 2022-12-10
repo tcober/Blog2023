@@ -1,8 +1,8 @@
 <template>
   <div v-editable="blok">
     <nuxt-img
-      v-if="blok.show_hero"
-      :src="blok.image.filename + '/m/1600x0'"
+      v-if="blok.show_hero && blok.image.filename"
+      :src="blok.image.filename"
       :alt="blok.image.alt"
       class="w-full h-[360px] lg:h-[450px] object-cover"
       placeholder

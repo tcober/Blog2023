@@ -1,12 +1,15 @@
 <script setup>
+const runtimeConfig = useRuntimeConfig();
+const { slug } = useRoute().params;
+
 useHead({
   link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
   htmlAttrs: { lang: "en" },
 });
-const { slug } = useRoute().params;
+console.log(runtimeConfig.buildType);
 
 const story = await useStoryblok(slug ? slug.join("/") : "main", {
-  version: "draft",
+  version: runtimeConfig.buildType === "local" ? "draft" : "public",
 });
 </script>
 
