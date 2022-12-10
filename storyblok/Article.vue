@@ -8,17 +8,17 @@
       placeholder
     />
     <div class="container px-5 sm:mx-auto mb-12">
-      <h1 class="text-6xl font-bold mt-12 mb-5">
+      <h1 class="text-5xl sm:text-6xl font-bold mt-12 mb-5">
         {{ blok.title }}
       </h1>
-      <h2 class="text-4xl text-[#1d243d] font-light mb-4">
+      <h2 class="text-3xl sm:text-4xl text-[#1d243d] font-light mb-4">
         {{ blok.teaser }}
       </h2>
       <div v-html="resolvedRichText" class="my-2 article"></div>
     </div>
     <client-only>
       <disqus
-        class="max-w-screen-md m-auto py-10"
+        class="max-w-screen-md m-auto py-10 px-8"
         ref="disqus"
         v-bind:shortname="'thomascober-com'"
         :identifier="blok.title"
