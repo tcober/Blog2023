@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     fallback: true,
   },
   target: "static",
+  ssr: false,
   css: ["@/assets/css/main.css"],
   modules: [
     [
