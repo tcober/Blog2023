@@ -24,10 +24,11 @@ defineProps({ blok: Object });
 const articles = ref(null);
 const storyblokApi = useStoryblokApi();
 const runtimeConfig = useRuntimeConfig();
-console.log(runtimeConfig.buildType);
+let local = runtimeConfig.local;
+console.log(local);
 
 const { data } = await storyblokApi.get("cdn/stories", {
-  version: runtimeConfig.buildType === "local" ? "draft" : "public",
+  version: local === "true" ? "draft" : "public",
   starts_with: "blog",
   is_startpage: false,
 });

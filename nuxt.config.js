@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      buildType: process.env.BUILD_ENV,
+      local: process.env.LOCAL,
     },
   },
   generate: {
