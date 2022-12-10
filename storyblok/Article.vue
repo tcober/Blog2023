@@ -19,7 +19,8 @@
         class="max-w-screen-md m-auto py-10"
         ref="disqus"
         v-bind:shortname="'thomascober-com'"
-        :identifier="'hello'"
+        :identifier="blok.title"
+        lang="en"
       ></disqus>
     </div>
   </div>
