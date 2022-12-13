@@ -33,3 +33,7 @@ const { data } = await storyblokApi.get("cdn/stories", {
 });
 articles.value = data.stories;
 </script>
+
+<style scoped>
+@import "~/assets/css/main.css";
+</style>

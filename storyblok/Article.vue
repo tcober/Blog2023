@@ -49,3 +49,35 @@ if (codeBlocks !== undefined) {
   useSyntax();
 }
 </script>
+
+<style>
+p {
+  @apply pb-4 text-lg;
+}
+
+p img {
+  @apply mb-8 mt-4;
+}
+
+pre {
+  @apply mb-8 mt-4;
+}
+
+pre,
+code {
+  font-family: "PT Mono";
+  @apply max-w-4xl mx-auto min-w-0;
+}
+
+.article h2 {
+  @apply text-3xl sm:text-4xl pb-6 pt-2;
+}
+
+.function_ {
+  color: rgb(175, 211, 255) !important;
+}
+
+code {
+  @apply bg-violet-800 text-yellow-100 px-2 py-1;
+}
+</style>

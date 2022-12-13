@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     fallback: true,
   },
   target: "static",
-  css: ["@/assets/css/main.css"],
+  css: ["~/assets/css/main.css"],
   modules: [
     [
       "@storyblok/nuxt",
