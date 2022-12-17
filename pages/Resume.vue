@@ -46,8 +46,8 @@
               <h4>Senior Developer</h4>
 
               <p class="summary text-xs">
-                Building wealth management apps with Vue and Node as a full
-                stack developer.
+                Royal Bank of Canada Wealth Management helps people manage their
+                financial future.
               </p>
 
               <ul class="text-xs pl-7">
@@ -67,8 +67,8 @@
               <h4>Contract Front End Developer</h4>
 
               <p class="summary text-xs">
-                Contract front end developer working with Angular, Vue, and
-                various other front end technologies
+                Solution Design Group provides staffing augmentation to help
+                companies all around the world meet their digital needs.
               </p>
 
               <ul class="text-xs pl-7">
@@ -88,8 +88,8 @@
               <h4>Front End Developer</h4>
 
               <p class="summary text-xs">
-                Front end developer working with Angular, CSS/SASS, and other
-                various front end technologies
+                Pediatric Home Service helps severely disabled children get the
+                medical help they need so they are able to live at home safely.
               </p>
 
               <ul class="text-xs pl-7">
@@ -113,9 +113,8 @@
               <h4>Front End Developer</h4>
 
               <p class="summary text-xs">
-                Iron Horse in a B2B marketing company and I helped them develop
-                and maintain promotional sites for virtual reality and gaming
-                companies
+                Iron Horse Interactive is a B2B marketing company focusing on
+                the VR/AR industry.
               </p>
 
               <ul class="text-xs pl-7">
@@ -136,9 +135,8 @@
               <h4>Junior Developer</h4>
 
               <p class="summary text-xs">
-                Lytics is a marketing analytics customer data platform. I helped
-                maintain their marketing site and did my best to learn as much
-                as I could as a junior software developer
+                Lytics is a marketing analytics customer data platform that
+                consolidates data and uses AI to analyze that data.
               </p>
 
               <ul class="text-xs pl-7">
@@ -164,7 +162,7 @@
               </div>
 
               <h4 class="tracking-wider text-xs">
-                Bachelor Graphic and Interactive Design
+                Bachelors in Graphic and Interactive Design
               </h4>
             </section>
 
@@ -177,7 +175,9 @@
                 </h5>
               </div>
 
-              <h4 class="tracking-wider text-xs">Associates General studies</h4>
+              <h4 class="tracking-wider text-xs">
+                Associates in General Studies
+              </h4>
             </section>
           </div>
           <OutsideInterests class="sm:hidden" />
