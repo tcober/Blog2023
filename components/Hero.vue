@@ -5,12 +5,12 @@
     >
       <div class="relative z-10 w-full text-center py-10 px-6">
         <h1
-          class="text-5xl sm:text-6xl drop-shadow-xl text-white pb-2 mx-auto max-w-screen-m"
+          class="text-5xl sm:text-6xl drop-shadow-xl text-white pb-2 mx-auto max-w-screen-md"
         >
           {{ article.title }}
         </h1>
         <h2
-          class="pb-1 max-w-screen-m text-3xl sm:text-4xl drop-shadow-xl text-white font-light mx-auto"
+          class="pb-1 max-w-screen-md text-3xl sm:text-4xl drop-shadow-xl text-white font-light mx-auto"
         >
           {{ article.teaser }}
         </h2>
