@@ -38,7 +38,6 @@ export default defineNuxtConfig({
     transpile: [
       "@fortawesome/vue-fontawesome",
       "@fortawesome/fontawesome-svg-core",
-      "@fortawesome/free-brands-svg-icons",
     ],
   },
 });
