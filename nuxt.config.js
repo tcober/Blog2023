@@ -11,7 +11,10 @@ export default defineNuxtConfig({
     fallback: true,
   },
   target: "static",
-  css: ["~/assets/css/main.css"],
+  css: [
+    "~/assets/css/main.css",
+    "@fortawesome/fontawesome-svg-core/styles.css",
+  ],
   modules: [
     [
       "@storyblok/nuxt",
@@ -31,4 +34,11 @@ export default defineNuxtConfig({
     "@nuxt/image-edge",
     "@nuxtjs/tailwindcss",
   ],
+  build: {
+    transpile: [
+      "@fortawesome/vue-fontawesome",
+      "@fortawesome/fontawesome-svg-core",
+      "@fortawesome/free-brands-svg-icons",
+    ],
+  },
 });

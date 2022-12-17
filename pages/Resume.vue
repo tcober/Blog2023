@@ -1,277 +1,322 @@
 <template>
-  <main id="resume" class="page">
-    <header class="resume-header clearfix">
-      <div class="profile-header pull-left">
-        <h1>Thomas Cober</h1>
-        <h2>Senior Javascript Engineer</h2>
-      </div>
-      <div class="profile-pic pull-right"></div>
-    </header>
-    <div class="resume-content">
-      <aside class="left-column">
-        <div class="container about-container">
-          <div class="title">
-            <h3>About</h3>
-            <div class="keyline"></div>
+  <div class="bg-black">
+    <main
+      id="resume"
+      class="bg-white max-w-4xl block relative mx-auto my-0 px-8 py-6"
+    >
+      <header
+        class="resume-header flex flex-col sm:flex-row justify-start sm:items-center"
+      >
+        <div class="profile-pic mb-5 sm:mb-0 sm:mr-6">
+          <nuxt-img
+            src="https://media-exp1.licdn.com/dms/image/C4D03AQF8SJ4bmgkcPQ/profile-displayphoto-shrink_400_400/0/1639881931562?e&#x3D;1676505600&amp;v&#x3D;beta&amp;t&#x3D;z6TbtRP3XVoT8bHxDdIA7FY5mm6Z3TbQPUADzE6Shy4"
+            alt="profile-pic"
+          />
+        </div>
+        <div class="flex flex-col sm:flex-row sm:items-end justify-start">
+          <div class="profile-header mr-6 mb-1 sm:mb-0">
+            <h1 class="mb-1">Thomas Cober</h1>
+            <h2>Senior Javascript Engineer</h2>
           </div>
-
-          <div class="info-tag-container">
-            <i class="fa fa-map-marker"></i>
-
-            <h6 class="info-text">Minnesota</h6>
-          </div>
-
-          <div class="info-tag-container">
-            <i class="fa fa-envelope-o"></i>
-
-            <h6 class="info-text">
-              <a href="https://thomascober.com" target="_blank">
-                tcober5@gmail.com
-                <i class="fa fa-external-link" aria-hidden="true"></i>
-              </a>
-            </h6>
-          </div>
-
-          <div class="info-tag-container">
-            <i class="fa fa-mobile"></i>
-
-            <h6 class="info-text">
-              <a href="https://thomascober.com" target="_blank">
-                (503) 403-8518
-                <i class="fa fa-external-link" aria-hidden="true"></i>
-              </a>
-            </h6>
-          </div>
-
-          <div class="info-tag-container">
-            <i class="fa fa-github"></i>
-
-            <h6 class="info-text">
-              <a href="https://github.com/tcober" target="_blank">
-                tcober5 <i class="fa fa-external-link" aria-hidden="true"></i>
-              </a>
-            </h6>
+          <div class="mb-0.5">
+            <p class="text-xs">tcober5@gmail.com</p>
+            <p class="text-xs">thomascober.com</p>
           </div>
         </div>
-        <div class="skills-container">
-          <section class="container">
+      </header>
+      <div class="resume-content flex sm:flex-row flex-col-reverse">
+        <div
+          class="left-column sm:w-1/2 sm:border-r-black sm:border-solid sm:border-r-2 sm:pr-8"
+        >
+          <div class="container work-container">
             <div class="title">
-              <h3>Front End</h3>
+              <h3>Experience</h3>
               <div class="keyline"></div>
             </div>
-            <h4 class="bold">Senior</h4>
-            <ul class="minimal">
-              <li>
-                <h6>HTML</h6>
-              </li>
-              <li>
-                <h6>CSS</h6>
-              </li>
-              <li>
-                <h6>JavaScript</h6>
-              </li>
-              <li>
-                <h6>Vue</h6>
-              </li>
-              <li>
-                <h6>Angular</h6>
-              </li>
-              <li>
-                <h6>Markdown</h6>
-              </li>
-              <li>
-                <h6>Storyblok</h6>
-              </li>
-            </ul>
-          </section>
-          <section class="container">
+
+            <section class="item">
+              <div class="section-header flex justify-between">
+                <h3 class="font-bold">RBC</h3>
+                <h5 class="italic">
+                  <span class="startDate">02/2020</span>
+                  <span class="endDate"> - Present</span>
+                </h5>
+              </div>
+
+              <h4>Senior Developer</h4>
+
+              <p class="summary text-xs">
+                Building wealth management apps with Vue and Node as a full
+                stack developer.
+              </p>
+
+              <ul class="text-xs pl-7">
+                <li>Contributed to an A+ Vue frontend</li>
+                <li>Refactored and contributed to a Node middle tear</li>
+              </ul>
+            </section>
+            <section class="item">
+              <div class="section-header flex justify-between">
+                <h3 class="font-bold pull-left">SDG</h3>
+                <h5 class="italic pull-right">
+                  <span class="startDate">05/2018</span>
+                  <span class="endDate"> - 09/2019</span>
+                </h5>
+              </div>
+
+              <h4>Contract Front End Developer</h4>
+
+              <p class="summary text-xs">
+                Contract front end developer working with Angular, Vue, and
+                various other front end technologies
+              </p>
+
+              <ul class="text-xs pl-7">
+                <li>Built 2 enterprise sized web apps</li>
+                <li>Learned how to be a great contractor</li>
+              </ul>
+            </section>
+            <section class="item">
+              <div class="section-header flex justify-between">
+                <h3 class="font-bold pull-left">Pediatric Home Service</h3>
+                <h5 class="italic pull-right">
+                  <span class="startDate">04/2017</span>
+                  <span class="endDate"> - 05/2018</span>
+                </h5>
+              </div>
+
+              <h4>Front End Developer</h4>
+
+              <p class="summary text-xs">
+                Front end developer working with Angular, CSS/SASS, and other
+                various front end technologies
+              </p>
+
+              <ul class="text-xs pl-7">
+                <li>
+                  Built an ecommerce web app for delivering medical supplies
+                </li>
+                <li>
+                  Maintained and built several promotional Wordpress sites
+                </li>
+              </ul>
+            </section>
+            <section class="item">
+              <div class="section-header flex justify-between">
+                <h3 class="font-bold pull-left">Iron Horse Interactive</h3>
+                <h5 class="italic pull-right">
+                  <span class="startDate">10/2016</span>
+                  <span class="endDate"> - 04/2017</span>
+                </h5>
+              </div>
+
+              <h4>Front End Developer</h4>
+
+              <p class="summary text-xs">
+                Iron Horse in a B2B marketing company and I helped them develop
+                and maintain promotional sites for virtual reality and gaming
+                companies
+              </p>
+
+              <ul class="text-xs pl-7">
+                <li>Helped with marketing site development</li>
+                <li>Installed analytics</li>
+                <li>Made SEO optimizations</li>
+              </ul>
+            </section>
+            <section class="item">
+              <div class="section-header flex justify-between">
+                <h3 class="font-bold pull-left">Lytics</h3>
+                <h5 class="italic pull-right">
+                  <span class="startDate">10/2015</span>
+                  <span class="endDate"> - 09/2016</span>
+                </h5>
+              </div>
+
+              <h4>Junior Developer</h4>
+
+              <p class="summary text-xs">
+                Lytics is a marketing analytics customer data platform. I helped
+                maintain their marketing site and did my best to learn as much
+                as I could as a junior software developer
+              </p>
+
+              <ul class="text-xs pl-7">
+                <li>Learned foundational developer skills</li>
+                <li>Designed and programmed a new marketing site</li>
+                <li>Designed and programmed promotional sites</li>
+              </ul>
+            </section>
+          </div>
+          <div class="container mt-3 sm:mt-0 education-container">
             <div class="title">
-              <h3>Back End</h3>
+              <h3>Education</h3>
               <div class="keyline"></div>
             </div>
-            <h4 class="bold">Mid-level</h4>
-            <ul class="minimal">
-              <li>
-                <h6>Node</h6>
-              </li>
-              <li>
-                <h6>Typescript</h6>
-              </li>
-            </ul>
-          </section>
-        </div>
-        <div class="container interests-container">
-          <div class="title">
-            <h3>Interests</h3>
-            <div class="keyline"></div>
+
+            <section class="item">
+              <div class="section-header">
+                <h3 class="font-bold pull-left">Portland State University</h3>
+                <h5 class="italic pull-right">
+                  <span class="startDate">09/2010</span>
+                  <span class="endDate"> - 06/2013</span>
+                </h5>
+              </div>
+
+              <h4 class="tracking-wider text-xs">
+                Bachelor Graphic and Interactive Design
+              </h4>
+            </section>
+
+            <section class="item">
+              <div class="section-header">
+                <h3 class="font-bold">Kishwaukee Community College</h3>
+                <h5 class="italic">
+                  <span class="startDate">09/2010</span>
+                  <span class="endDate"> - 06/2009</span>
+                </h5>
+              </div>
+
+              <h4 class="tracking-wider text-xs">Associates General studies</h4>
+            </section>
           </div>
-
-          <section class="item">
-            <h4 class="bold">Video Games</h4>
-          </section>
-          <section class="item">
-            <h4 class="bold">Basketball</h4>
-          </section>
-          <section class="item">
-            <h4 class="bold">Virtual and Augmented Reality</h4>
-          </section>
-          <section class="item">
-            <h4 class="bold">3d Design</h4>
-          </section>
+          <OutsideInterests class="sm:hidden" />
         </div>
-      </aside>
-      <div class="right-column">
-        <div class="container work-container">
-          <div class="title">
-            <h3>Experience</h3>
-            <div class="keyline"></div>
+        <div class="right-column sm:w-1/2 sm:pl-8">
+          <div class="container">
+            <div class="title">
+              <h3>Skills</h3>
+              <div class="keyline"></div>
+            </div>
+
+            <section class="flex flex-col">
+              <div class="flex flex-row mb-4">
+                <h4 class="w-44 font-light">Vue</h4>
+                <font-awesome-icon
+                  v-for="index in 5"
+                  class="text-base mr-1.5"
+                  icon="fa-solid fa-circle"
+                />
+              </div>
+              <div class="flex flex-row mb-4">
+                <h4 class="w-44 font-light">HTML</h4>
+                <font-awesome-icon
+                  v-for="index in 5"
+                  class="text-base mr-1.5"
+                  icon="fa-solid fa-circle"
+                />
+              </div>
+              <div class="flex flex-row mb-4">
+                <h4 class="w-44 font-light">CSS/SASS</h4>
+                <font-awesome-icon
+                  v-for="index in 5"
+                  class="text-base mr-1.5"
+                  icon="fa-solid fa-circle"
+                />
+              </div>
+              <div class="flex flex-row mb-4">
+                <h4 class="w-44 font-light">Angular 2+</h4>
+                <font-awesome-icon
+                  v-for="index in 3"
+                  class="text-base mr-1.5"
+                  icon="fa-solid fa-circle"
+                />
+              </div>
+              <div class="flex flex-row mb-4">
+                <h4 class="w-44 font-light">Javascript</h4>
+                <font-awesome-icon
+                  v-for="index in 5"
+                  class="text-base mr-1.5"
+                  icon="fa-solid fa-circle"
+                />
+              </div>
+              <div class="flex flex-row mb-4">
+                <h4 class="w-44 font-light">Grunt</h4>
+                <font-awesome-icon
+                  v-for="index in 3"
+                  class="text-base mr-1.5"
+                  icon="fa-solid fa-circle"
+                />
+              </div>
+              <div class="flex flex-row mb-4">
+                <h4 class="w-44 font-light">PHP</h4>
+                <font-awesome-icon
+                  v-for="index in 2"
+                  class="text-base mr-1.5"
+                  icon="fa-solid fa-circle"
+                />
+              </div>
+              <div class="flex flex-row mb-4">
+                <h4 class="w-44 font-light">Adobe CC</h4>
+                <font-awesome-icon
+                  v-for="index in 2"
+                  class="text-base mr-1.5"
+                  icon="fa-solid fa-circle"
+                />
+              </div>
+              <div class="flex flex-row mb-4">
+                <h4 class="w-44 font-light">Storyblok</h4>
+                <font-awesome-icon
+                  v-for="index in 3"
+                  class="text-base mr-1.5"
+                  icon="fa-solid fa-circle"
+                />
+              </div>
+              <div class="flex flex-row mb-4">
+                <h4 class="w-44 font-light">CL Tools</h4>
+                <font-awesome-icon
+                  v-for="index in 4"
+                  class="text-base mr-1.5"
+                  icon="fa-solid fa-circle"
+                />
+              </div>
+              <div class="flex flex-row mb-4">
+                <h4 class="w-44 font-light">Git</h4>
+                <font-awesome-icon
+                  v-for="index in 4"
+                  class="text-base mr-1.5"
+                  icon="fa-solid fa-circle"
+                />
+              </div>
+              <div class="flex flex-row mb-4">
+                <h4 class="w-44 font-light">Jest</h4>
+                <font-awesome-icon
+                  v-for="index in 4"
+                  class="text-base mr-1.5"
+                  icon="fa-solid fa-circle"
+                />
+              </div>
+              <div class="flex flex-row mb-4">
+                <h4 class="w-44 font-light">Node</h4>
+                <font-awesome-icon
+                  v-for="index in 3"
+                  class="text-base mr-1.5"
+                  icon="fa-solid fa-circle"
+                />
+              </div>
+              <div class="flex flex-row mb-4">
+                <h4 class="w-44 font-light">Losing My Keys</h4>
+                <font-awesome-icon
+                  v-for="index in 5"
+                  class="text-base mr-1.5"
+                  icon="fa-solid fa-circle"
+                />
+              </div>
+              <div class="flex flex-row mb-4">
+                <h4 class="w-44 font-light">Supporting My Team</h4>
+                <font-awesome-icon
+                  v-for="index in 5"
+                  class="text-base mr-1.5"
+                  icon="fa-solid fa-circle"
+                />
+              </div>
+            </section>
+            <OutsideInterests class="hidden sm:block" />
           </div>
-
-          <section class="item">
-            <div class="section-header clearfix">
-              <h3 class="bold pull-left">RBC</h3>
-              <h5 class="italic pull-right">
-                <span class="startDate">02/2020</span>
-                <span class="endDate"> - Present</span>
-              </h5>
-            </div>
-
-            <h4>Senior Developer</h4>
-
-            <p class="summary">
-              Building wealth management apps with Vue and Node as a full stack
-              developer.
-            </p>
-
-            <ul>
-              <li>Contributed to an A+ Vue frontend</li>
-              <li>Refactoring and contributing to a Node middle tear</li>
-            </ul>
-          </section>
-          <section class="item">
-            <div class="section-header clearfix">
-              <h3 class="bold pull-left">SDG</h3>
-              <h5 class="italic pull-right">
-                <span class="startDate">05/2018</span>
-                <span class="endDate"> - 09/2019</span>
-              </h5>
-            </div>
-
-            <h4>Contract Front End Developer</h4>
-
-            <p class="summary">
-              Contract front end developer working with Angular, Vue, and
-              various other front end technologies
-            </p>
-
-            <ul>
-              <li>Built 2 enterprise sized web apps</li>
-              <li>Learned how to be a great contractor</li>
-            </ul>
-          </section>
-          <section class="item">
-            <div class="section-header clearfix">
-              <h3 class="bold pull-left">Pediatric Home Service</h3>
-              <h5 class="italic pull-right">
-                <span class="startDate">04/2017</span>
-                <span class="endDate"> - 05/2018</span>
-              </h5>
-            </div>
-
-            <h4>Front End Developer</h4>
-
-            <p class="summary">
-              Front end developer working with Angular, CSS/SASS, and other
-              various front end technologies
-            </p>
-
-            <ul>
-              <li>
-                Built and ecommerce web app for delivering medical supplies
-              </li>
-              <li>Maintained and built several promotional Wordpress sites</li>
-            </ul>
-          </section>
-          <section class="item">
-            <div class="section-header clearfix">
-              <h3 class="bold pull-left">Iron Horse Interactive</h3>
-              <h5 class="italic pull-right">
-                <span class="startDate">10/2016</span>
-                <span class="endDate"> - 04/2017</span>
-              </h5>
-            </div>
-
-            <h4>Front End Developer</h4>
-
-            <p class="summary">
-              Iron Horse in a B2B marketing company and I helped them develop
-              and maintain promotional sites for virtual reality and gaming
-              companies
-            </p>
-
-            <ul>
-              <li>Marketing site development</li>
-              <li>Analytics</li>
-              <li>Seo optimization</li>
-            </ul>
-          </section>
-          <section class="item">
-            <div class="section-header clearfix">
-              <h3 class="bold pull-left">Lytics</h3>
-              <h5 class="italic pull-right">
-                <span class="startDate">10/2015</span>
-                <span class="endDate"> - 09/2016</span>
-              </h5>
-            </div>
-
-            <h4>Junior Developer</h4>
-
-            <p class="summary">
-              Lytics is a marketing analytics customer data platform. I helped
-              maintain their marketing site and did my best to learn as much as
-              I could as a junior software developer
-            </p>
-
-            <ul>
-              <li>Learned foundational developer skills</li>
-              <li>Designed and programmed a new marketing site</li>
-              <li>Designed and programmed promotional sites</li>
-            </ul>
-          </section>
-        </div>
-        <div class="container education-container">
-          <div class="title">
-            <h3>Education</h3>
-            <div class="keyline"></div>
-          </div>
-
-          <section class="item">
-            <div class="section-header clearfix">
-              <h3 class="bold pull-left">Portland State University</h3>
-              <h5 class="italic pull-right">
-                <span class="startDate">09/2010</span>
-                <span class="endDate"> - 06/2013</span>
-              </h5>
-            </div>
-
-            <h4>Bachelor Graphic and Interactive Design</h4>
-          </section>
-
-          <section class="item">
-            <div class="section-header clearfix">
-              <h3 class="bold pull-left">Kishwaukee Community College</h3>
-              <h5 class="italic pull-right">
-                <span class="startDate">09/2010</span>
-                <span class="endDate"> - 06/2009</span>
-              </h5>
-            </div>
-
-            <h4>Associates General studies</h4>
-          </section>
         </div>
       </div>
-    </div>
-  </main>
+    </main>
+  </div>
 </template>
 
 <script setup>

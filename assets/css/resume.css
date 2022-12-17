@@ -1,15 +1,5 @@
-/* Utils */
-/*----- Colors -----*/
-/*----- Fonts -----*/
-/*----- Dimensions and sizes -----*/
-/* Base */
-
-body {
-  font-weight: 400;
-  background: #f8f8f8;
-  margin: 50px 0 100px;
-  letter-spacing: 0.3px;
-  color: #39424b;
+.work-container li {
+  list-style-type: circle;
 }
 
 h1,
@@ -18,96 +8,53 @@ h3,
 h4,
 h5,
 h6 {
-  text-transform: uppercase;
-  margin: 0;
+  @apply uppercase;
 }
 
 h1 {
-  font-weight: 700;
-  font-size: 40px;
-  letter-spacing: 1px;
-  margin-bottom: 5px;
+  @apply font-bold text-4xl tracking-wide;
 }
 
 h2 {
-  font-weight: 300;
-  font-size: 16px;
-  letter-spacing: 0.5px;
+  @apply text-base tracking-wider;
 }
 
 h3 {
-  font-weight: 300;
-  font-size: 14px;
-  letter-spacing: 0.4px;
-}
-h3.bold {
-  font-weight: 700;
+  @apply text-sm tracking-wider;
 }
 
 h4 {
-  font-weight: 300;
-  font-size: 12px;
-}
-h4.bold {
-  font-weight: 700;
+  @apply text-xs;
 }
 
 h5 {
-  font-weight: 300;
   font-size: 11px;
-}
-h5.italic {
-  font-style: italic;
+  @apply font-light;
 }
 
 h6 {
-  font-weight: 400;
   font-size: 10px;
-}
-
-a {
-  color: inherit;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #2895f1;
-}
-a .fa-external-link {
-  font-size: 10px;
-  vertical-align: text-top;
-}
-
-p,
-li {
-  font-size: 11px;
+  @apply font-normal;
 }
 
 blockquote {
   font-size: 11px;
-  font-weight: 400;
-  font-style: italic;
-  margin: 10px 25px;
+  @apply font-normal italic my-3 mx-6;
 }
 
 em {
   color: #999;
 }
 
-ul {
-  margin: 10px 0 0;
-  -webkit-padding-start: 25px;
+.left-column ul {
+  @apply mt-2.5;
 }
-ul li {
-  padding-left: 10px;
-}
-ul.minimal {
-  list-style: none;
-  padding: 0;
-}
+
 ul.minimal li {
   margin-bottom: 3px;
   padding-left: 0;
 }
+
 ul.two-column {
   -webkit-column-count: 2;
   -webkit-column-gap: 28px;
@@ -129,15 +76,7 @@ ul.two-column li {
 .keyline {
   width: 45px;
   margin: 8px 0 10px;
-  border-top: 1px solid #56817a;
-}
-
-.pull-left {
-  float: left;
-}
-
-.pull-right {
-  float: right;
+  border-top: 1px solid #5d0184;
 }
 
 .clearfix:after {
@@ -146,15 +85,11 @@ ul.two-column li {
   clear: both;
 }
 
-.profile-pic {
-  margin-top: -5px;
-  margin-right: 18px;
-}
 .profile-pic img {
-  height: 52px;
-  width: 52px;
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
-  border: 2px solid #56817a;
+  border: 2px solid #5d0184;
 }
 
 .summary {
@@ -162,36 +97,6 @@ ul.two-column li {
 }
 
 /* Layouts */
-.page {
-  background: white;
-  width: 612px;
-  min-height: 792px;
-  display: block;
-  margin: 0 auto;
-  border-top: 10px solid #56817a;
-  padding: 36px 22px 30px 34px;
-  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-}
-.page:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.left-column {
-  float: left;
-  width: 160px;
-  margin-right: 20px;
-  word-wrap: break-word;
-}
-
-.right-column {
-  width: auto;
-  overflow: hidden;
-}
-
 .item {
   margin-bottom: 15px;
 }
@@ -214,12 +119,10 @@ ul.two-column li {
   .page .resume-content {
     padding: 0 22px 0 34px;
   }
-  .container {
-    page-break-inside: avoid;
-  }
   .work-container .item {
     page-break-inside: avoid;
   }
+
   .fa-external-link {
     display: none;
   }
@@ -228,11 +131,11 @@ ul.two-column li {
 /* Components */
 .info-tag-container {
   margin-bottom: 5px;
+  @apply justify-between items-center;
 }
 .info-tag-container .fa {
   font-size: 14px;
   width: 12px;
-  margin-right: 5px;
   text-align: center;
   vertical-align: middle;
 }
@@ -255,7 +158,7 @@ ul.two-column li {
 }
 .info-tag-container .info-text {
   font-size: 9px;
-  display: inline-block;
+  display: inline;
   vertical-align: middle;
   width: 139px;
 }
@@ -272,4 +175,11 @@ ul.two-column li {
 .education-container .specialization {
   text-transform: none;
   font-style: italic;
+}
+
+@media print {
+  @page {
+    size: 9in 11.8in;
+    margin: 0px;
+  }
 }

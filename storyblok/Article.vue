@@ -7,11 +7,15 @@
       class="w-full h-[360px] lg:h-[450px] object-cover"
       placeholder
     />
-    <div class="container px-5 sm:mx-auto mb-12">
-      <h1 class="text-5xl sm:text-6xl font-bold mt-12 mb-5">
+    <div class="container px-5 mx-auto mb-12">
+      <h1
+        class="text-5xl sm:text-6xl font-bold mt-12 mb-5 mx-auto max-w-screen-md"
+      >
         {{ blok.title }}
       </h1>
-      <h2 class="text-3xl sm:text-4xl text-[#1d243d] font-light mb-4">
+      <h2
+        class="text-3xl sm:text-4xl text-[#1d243d] font-light mb-4 mx-auto max-w-screen-md"
+      >
         {{ blok.teaser }}
       </h2>
       <div v-html="resolvedRichText" class="my-2 article"></div>
@@ -50,20 +54,24 @@ if (codeBlocks !== undefined) {
 }
 </script>
 
-<style>
-p {
+<style scoped>
+.article {
+  @apply mx-auto;
+}
+
+.article p {
   @apply pb-4 text-lg;
 }
 
-p img {
+.article p img {
   @apply mb-8 mt-4;
 }
 
-pre {
+.article pre {
   @apply mb-8 mt-4;
 }
 
-pre,
+.article pre,
 code {
   font-family: "PT Mono";
   @apply max-w-4xl mx-auto min-w-0;
@@ -73,11 +81,11 @@ code {
   @apply text-3xl sm:text-4xl pb-6 pt-2;
 }
 
-.function_ {
+.article .function_ {
   color: rgb(175, 211, 255) !important;
 }
 
-code {
+.article code {
   @apply bg-violet-800 text-yellow-100 px-2 py-1;
 }
 </style>

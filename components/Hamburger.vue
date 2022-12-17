@@ -1,6 +1,6 @@
 <template>
   <header class="z-50 h-10 w-12">
-    <div class="nav-container">
+    <div class="nav-container print:invisible">
       <input
         id="menu"
         class="checkbox"
@@ -32,7 +32,7 @@ const isMenuOn = computed({
 });
 </script>
 
-<style>
+<style scoped>
 .nav-container {
   display: block;
   position: relative;
