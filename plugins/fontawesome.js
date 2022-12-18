@@ -10,5 +10,7 @@ config.autoAddCss = false;
 library.add(faCircle);
 
 export default defineNuxtPlugin((nuxtApp) => {
-  nuxtApp.vueApp.component("font-awesome-icon", FontAwesomeIcon, {});
+  nuxtApp.vueApp.component("font-awesome-icon", FontAwesomeIcon, {
+    defer:true,
+  });
 });
