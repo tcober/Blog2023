@@ -50,4 +50,7 @@ export default defineNuxtConfig({
       if (isClient) config.resolve.alias.vue = "vue/dist/vue.esm-bundler.js";
     },
   },
+  nitro: {
+    compressPublicAssets: true,
+  }
 });
