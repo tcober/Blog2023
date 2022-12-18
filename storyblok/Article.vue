@@ -18,7 +18,9 @@
       >
         {{ blok.teaser }}
       </h2>
-      <div v-html="resolvedRichText" class="my-2 article"></div>
+      <div class="article">
+        <Vue3RuntimeTemplate :template="resolvedRichText"></Vue3RuntimeTemplate>
+      </div>
     </div>
     <client-only>
       <disqus
@@ -33,9 +35,9 @@
 </template>
 
 <script setup>
+import Vue3RuntimeTemplate from "vue3-runtime-template";
 import { useSyntax } from "~/composables/syntax.js";
 const props = defineProps({ blok: Object });
-const resolvedRichText = computed(() => renderRichText(props.blok.content));
 
 useHead({
   title: props.blok.title,
@@ -45,13 +47,25 @@ useHead({
   },
 });
 
-let codeBlocks = props.blok.content.content.find((content) => {
-  return content.type === "code_block";
-});
+const resolvedRichText = computed(() =>
+  renderRichText(props.blok.content, {
+    resolver: (component, blok) => {
+      // console.log("I fired");
+      switch (component) {
+        case "blog-image":
+          return `<component :blok='${JSON.stringify(blok)}'
+                     is="${component}"></component>`;
+        case "blog-code":
+          return `<component :blok='${JSON.stringify(blok)}'
+                     is="${component}"></component>`;
+        default:
+          return "Resolver not defined";
+      }
+    },
+  })
+);
 
-if (codeBlocks !== undefined) {
-  useSyntax();
-}
+useSyntax();
 </script>
 
 <style scoped>
@@ -61,10 +75,6 @@ if (codeBlocks !== undefined) {
 
 .article p {
   @apply pb-4 text-lg;
-}
-
-.article p img {
-  @apply mb-8 mt-4;
 }
 
 .article pre {

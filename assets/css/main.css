@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Merriweather:wght@300;400;900&family=PT+Mono&display=swap");
 
-.article p,
 .article h1,
 .article h2,
 .article h3,
@@ -8,6 +7,26 @@
 .article h5,
 .article h6 {
   @apply max-w-screen-md mx-auto;
+}
+
+.article {
+  @apply mx-auto;
+}
+
+.article p {
+  @apply pb-4 text-lg max-w-3xl mx-auto;
+}
+
+.article h2 {
+  @apply text-3xl sm:text-4xl pb-6 pt-2;
+}
+
+.article .function_ {
+  color: rgb(175, 211, 255) !important;
+}
+
+.article code {
+  @apply bg-violet-800 text-yellow-100 px-2 py-1;
 }
 
 h1 {
@@ -43,26 +62,4 @@ a {
 
 a:hover {
   @apply text-violet-800;
-}
-
-.article p {
-  @apply pb-4 text-lg  font-light;
-}
-
-.article p img {
-  @apply mb-8 mt-4;
-}
-
-.article pre {
-  @apply mb-8 mt-4;
-}
-
-.article pre,
-code {
-  font-family: "PT Mono";
-  @apply max-w-4xl mx-auto min-w-0;
-}
-
-.article h2 {
-  @apply text-3xl sm:text-4xl pb-6 pt-2;
 }

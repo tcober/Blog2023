@@ -8,6 +8,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@marvr/storyblok-rich-text-vue-renderer": "^2.0.1",
     "@nuxt/image-edge": "^1.0.0-27840416.dc1ed65",
     "@tailwindcss/typography": "^0.5.8",
     "nuxt": "3.0.0",
@@ -27,6 +28,7 @@
     "highlight.js": "^11.7.0",
     "pinia": "^2.0.26",
     "vue-disqus": "^5.1.0",
-    "vue-router": "^4.1.6"
+    "vue-router": "^4.1.6",
+    "vue3-runtime-template": "^1.0.2"
   }
 }

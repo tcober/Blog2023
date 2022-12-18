@@ -22,6 +22,8 @@
     <nuxt-img
       :src="article.image.filename"
       :alt="article.image.alt"
+      provider="storyblok"
+      format="webp"
       class="absolute top-0 left-0 z-0 w-full h-full object-cover"
       placeholder
     />
