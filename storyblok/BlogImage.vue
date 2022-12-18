@@ -3,6 +3,7 @@
     provider="storyblok"
     format="webp"
     :src="props.blok.image.filename"
+    :alt="props.blok.image.alt"
     placeholder
   />
 </template>
