@@ -38,6 +38,7 @@ export default defineNuxtConfig({
     "@nuxtjs/robots",
     "@nuxt/image-edge",
     "@nuxtjs/tailwindcss",
+    "@aceforth/nuxt-optimized-images",
   ],
   build: {
     transpile: [
