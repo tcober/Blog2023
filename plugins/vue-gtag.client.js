@@ -1,9 +1,10 @@
 import VueGtag from "vue-gtag-next";
 
-export default defineNuxtPlugin((nuxtApp) => {
+export default defineNuxtPlugin(async (nuxtApp) => {
+  const { default: VueGtag } = await import("vue-gtag-next");
+
   nuxtApp.vueApp.use(VueGtag, {
     property: {
-      defer:true,
       id: "UA-43614936-1",
     },
   });
