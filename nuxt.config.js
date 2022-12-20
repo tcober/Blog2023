@@ -38,7 +38,6 @@ export default defineNuxtConfig({
     "@nuxtjs/robots",
     "@nuxt/image-edge",
     "@nuxtjs/tailwindcss",
-    "@aceforth/nuxt-optimized-images",
   ],
   build: {
     transpile: [
@@ -49,6 +48,7 @@ export default defineNuxtConfig({
       chunks: "all",
     },
   },
+  buildModules: ["@aceforth/nuxt-optimized-images"],
   hooks: {
     "vite:extendConfig": (config, { isClient, isServer }) => {
       if (isClient) config.resolve.alias.vue = "vue/dist/vue.esm-bundler.js";
