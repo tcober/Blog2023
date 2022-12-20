@@ -44,6 +44,9 @@ export default defineNuxtConfig({
       "@fortawesome/vue-fontawesome",
       "@fortawesome/fontawesome-svg-core",
     ],
+    splitChunks: {
+      chunks: "all",
+    },
   },
   hooks: {
     "vite:extendConfig": (config, { isClient, isServer }) => {
@@ -52,5 +55,5 @@ export default defineNuxtConfig({
   },
   nitro: {
     compressPublicAssets: true,
-  }
+  },
 });
