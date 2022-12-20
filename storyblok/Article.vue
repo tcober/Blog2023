@@ -1,6 +1,7 @@
 <template>
   <div v-editable="blok">
     <nuxt-img
+      preload
       v-if="blok.show_hero && blok.image.filename"
       :src="blok.image.filename"
       :alt="blok.image.alt"

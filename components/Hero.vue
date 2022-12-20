@@ -19,6 +19,7 @@
         </h3>
       </div>
       <nuxt-img
+        preload
         :src="article.image.filename"
         :alt="article.image.alt"
         provider="storyblok"

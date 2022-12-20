@@ -1,5 +1,6 @@
 <template>
   <nuxt-img
+    preload
     provider="storyblok"
     format="webp"
     :src="props.blok.image.filename"
