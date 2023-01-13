@@ -4,6 +4,7 @@
     v-editable="article"
     class="w-full min-h-[500px] relative bg-[#fdf7f6] rounded-[5px] text-center overflow-hidden flex items-end justify-center"
   >
+
     <div class="relative z-10 w-full text-center py-6 bottom-2 px-6">
       <h2
         class="drop-shadow-xl text-5xl sm:text-4xl text-white display font-bold mb-1 mx-auto"
@@ -19,6 +20,7 @@
         {{ renderedDate }}
       </h4>
     </div>
+
     <nuxt-img
       preload
       :src="article.image.filename"
@@ -28,6 +30,7 @@
       class="absolute top-0 left-0 z-0 w-full h-full object-cover"
       placeholder
     />
+    
   </NuxtLink>
 </template>
 

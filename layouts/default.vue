@@ -1,6 +1,6 @@
 <template>
   <main>
-    <Hamburger class="fixed top-10 right-10" @show-menu="store.toggleMenu" />
+    <NavHamburger class="fixed top-10 right-10" @show-menu="store.toggleMenu" />
     <Nav />
     <slot />
   </main>

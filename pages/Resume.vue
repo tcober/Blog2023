@@ -312,7 +312,7 @@
                 />
               </div>
             </section>
-            <OutsideInterests class="hidden sm:block" />
+            <ResumeOutsideInterests class="hidden sm:block" />
           </div>
         </div>
       </div>
