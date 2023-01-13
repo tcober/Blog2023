@@ -1,13 +1,13 @@
-export default defineNuxtPlugin(async (nuxtApp) => {
-  const { VueGtag } = await import("vue-gtag-next");
+import VueGtag from "vue-gtag";
 
+export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.use(
     VueGtag,
     {
-      property: {
+      config: {
         id: "UA-43614936-1",
       },
     },
-    nuxtApp.vueApp.router
+    nuxtApp.$router
   );
 });

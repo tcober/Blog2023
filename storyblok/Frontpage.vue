@@ -1,13 +1,13 @@
 <template>
   <div>
-    <Hero
+    <FrontpageHeroCard
       :article="articles[0].content"
       :slug="articles[0].full_slug"
       :created="articles[0].published_at"
     />
     <div>
       <div class="grid md:grid-cols-2 gap-4 place-items-start">
-        <ArticleCard
+        <FrontpageSubCard
           v-for="article in articles.slice(1)"
           :key="article.uuid"
           :article="article.content"
