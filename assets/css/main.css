@@ -25,8 +25,12 @@
   color: rgb(175, 211, 255) !important;
 }
 
-.article code {
-  @apply bg-violet-800 text-yellow-100 px-2 py-1;
+code {
+  @apply opacity-0 transition-opacity;
+}
+
+.hljs {
+  @apply opacity-100;
 }
 
 h1 {

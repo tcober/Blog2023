@@ -100,10 +100,6 @@ code {
   color: rgb(175, 211, 255) !important;
 }
 
-.article code {
-  @apply bg-violet-800 text-yellow-100 px-2 py-1;
-}
-
 .fade-enter-active,
 .fade-leave-active {
   @apply opacity-100 transition-opacity duration-1000 ease-in-out;
