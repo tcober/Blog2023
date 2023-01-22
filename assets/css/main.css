@@ -26,11 +26,11 @@
 }
 
 code {
-  @apply opacity-0 transition-opacity;
+  @apply opacity-0;
 }
 
 .hljs {
-  @apply opacity-100;
+  @apply opacity-100 transition-opacity;
 }
 
 h1 {
@@ -70,7 +70,7 @@ a:hover {
 
 .page-enter-active,
 .page-leave-active {
-  transition: all 0.15s;
+  transition: all 0.15s ease-in-out;
 }
 .page-enter-from,
 .page-leave-to {
