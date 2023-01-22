@@ -16,8 +16,9 @@ export function useSyntax() {
     languages: ["javascript", "vue", "json", "css"],
   });
 
-  // a composable can also hook into its owner component's
   onMounted(() => {
-    hljs.highlightAll();
+    setTimeout(() => {
+      hljs.highlightAll();
+    }, 210);
   });
 }
