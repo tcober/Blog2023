@@ -1,5 +1,5 @@
 <template>
-  <div v-editable="blok">
+  <div v-if="resolvedRichText" v-editable="blok">
     <nuxt-img
       preload
       v-if="blok.show_hero && blok.image.filename"
@@ -20,7 +20,11 @@
         {{ blok.teaser }}
       </h2>
       <div class="article">
-        <Vue3RuntimeTemplate :template="resolvedRichText"></Vue3RuntimeTemplate>
+        <Vue3RuntimeTemplate
+          :key="blok.id"
+          v-if="resolvedRichText"
+          :template="resolvedRichText"
+        ></Vue3RuntimeTemplate>
       </div>
     </div>
     <client-only>
@@ -37,7 +41,7 @@
 
 <script setup>
 import Vue3RuntimeTemplate from "vue3-runtime-template";
-import { useSyntax } from "~/composables/syntax.js";
+import { useSyntax } from "~/composables/syntax";
 const props = defineProps({ blok: Object });
 
 useHead({
@@ -96,7 +100,13 @@ code {
   color: rgb(175, 211, 255) !important;
 }
 
-.article code {
-  @apply bg-violet-800 text-yellow-100 px-2 py-1;
+.fade-enter-active,
+.fade-leave-active {
+  @apply opacity-100 transition-opacity duration-1000 ease-in-out;
+}
+
+.v-enter-from,
+.fade-leave-to {
+  @apply opacity-0;
 }
 </style>

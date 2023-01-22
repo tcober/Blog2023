@@ -1,14 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  transition: "page",
+  app: {
+    pageTransition: { name: "page", mode: "out-in" },
+  },
   buildEnvironment: process.env.BUILD_ENV,
   runtimeConfig: {
     public: {
       local: process.env.LOCAL,
     },
-  },
-  generate: {
-    fallback: true,
   },
   target: "static",
   css: [
@@ -44,9 +43,6 @@ export default defineNuxtConfig({
       "@fortawesome/vue-fontawesome",
       "@fortawesome/fontawesome-svg-core",
     ],
-    splitChunks: {
-      chunks: "all",
-    },
   },
   buildModules: ["@aceforth/nuxt-optimized-images"],
   hooks: {

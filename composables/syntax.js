@@ -5,6 +5,7 @@ import xml from "highlight.js/lib/languages/xml";
 import json from "highlight.js/lib/languages/json";
 import css from "highlight.js/lib/languages/css";
 import "highlight.js/styles/gradient-dark.css";
+import debounce from "lodash/debounce";
 
 // by convention, composable function names start with "use"
 export function useSyntax() {
@@ -16,8 +17,9 @@ export function useSyntax() {
     languages: ["javascript", "vue", "json", "css"],
   });
 
-  // a composable can also hook into its owner component's
   onMounted(() => {
-    hljs.highlightAll();
+    setTimeout(() => {
+      hljs.highlightAll();
+    }, 210);
   });
 }
