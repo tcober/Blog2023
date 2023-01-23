@@ -37,6 +37,7 @@ export default defineNuxtConfig({
     "@nuxtjs/robots",
     "@nuxt/image-edge",
     "@nuxtjs/tailwindcss",
+    "@nuxtjs/google-fonts",
   ],
   build: {
     transpile: [
@@ -45,6 +46,15 @@ export default defineNuxtConfig({
     ],
   },
   buildModules: ["@aceforth/nuxt-optimized-images"],
+  googleFonts: {
+    download: true,
+    preload: true,
+    families: {
+      "Lilita+One": true,
+      "PT+Monos": true,
+      Merriweather: [300, 400, 900],
+    },
+  },
   hooks: {
     "vite:extendConfig": (config, { isClient, isServer }) => {
       if (isClient) config.resolve.alias.vue = "vue/dist/vue.esm-bundler.js";
