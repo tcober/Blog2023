@@ -10,7 +10,11 @@
 
 <script setup>
 import { useNavStore } from "~/store/nav";
+import { bootstrap } from "vue-gtag";
 let store = useNavStore();
+onMounted(() => {
+  bootstrap();
+});
 </script>
 
 <style scoped></style>
