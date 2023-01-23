@@ -49,7 +49,7 @@ export default defineNuxtConfig({
   googleFonts: {
     download: true,
     preload: true,
-    display: "fallback",
+    display: "swap",
     families: {
       "Lilita+One": true,
       "PT+Mono": true,
