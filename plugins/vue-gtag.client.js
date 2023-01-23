@@ -6,8 +6,8 @@ export default defineNuxtPlugin((nuxtApp) => {
     {
       config: {
         id: "UA-43614936-1",
-        deferScriptLoad: true,
       },
+      bootstrap: false,
     },
     nuxtApp.$router
   );
