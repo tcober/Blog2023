@@ -2,6 +2,14 @@
 export default defineNuxtConfig({
   app: {
     pageTransition: { name: "page", mode: "out-in" },
+    head: {
+      script: [
+        {
+          src: "https://www.googletagmanager.com/gtag/js?id=G-ZJ8DPDM2QV",
+          async: true,
+        },
+      ],
+    },
   },
   buildEnvironment: process.env.BUILD_ENV,
   runtimeConfig: {
