@@ -1,17 +1,3 @@
-// import VueGtag from "vue-gtag";
-
-// export default defineNuxtPlugin((nuxtApp) => {
-//   nuxtApp.vueApp.use(
-//     VueGtag,
-//     {
-//       config: {
-//         id: "G-ZJ8DPDM2QV",
-//       },
-//     },
-//     nuxtApp.$router
-//   );
-// });
-
 const gtagId = "G-ZJ8DPDM2QV";
 
 export default defineNuxtPlugin(() => {
