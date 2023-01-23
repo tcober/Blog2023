@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-black">
+  <div class="bg-[#0d112f]">
     <main
       id="resume"
       class="bg-white max-w-4xl block relative mx-auto my-0 px-8 py-6"

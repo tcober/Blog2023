@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-black relative">
+  <div class="bg-[#0d112f] relative">
     <h1
       class="mx-auto text-6xl text-center py-10 text-white px-10 md:px-32 md:whitespace-nowrap"
     >

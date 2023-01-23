@@ -28,11 +28,11 @@ li {
 }
 
 a {
-  @apply text-violet-700;
+  @apply text-blue-500;
 }
 
 a:hover {
-  @apply text-violet-800;
+  @apply text-blue-700;
 }
 
 /* Blog Post Styles */
@@ -64,6 +64,10 @@ a:hover {
 
 .article .hljs {
   @apply opacity-100 transition-opacity;
+}
+
+.article p code {
+  @apply px-2 py-1 bg-blue-900 text-white opacity-100 text-sm align-middle border rounded-lg;
 }
 
 /* Universal transition */

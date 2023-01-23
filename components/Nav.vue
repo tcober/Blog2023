@@ -2,7 +2,7 @@
   <transition>
     <div
       v-if="store.nav"
-      class="w-full sm:w-1/3 fixed bottom-0 top-0 bg-black z-30"
+      class="w-full sm:w-1/3 fixed bottom-0 top-0 bg-[#0d112f] z-30"
     >
       <nav class="h-full">
         <ul

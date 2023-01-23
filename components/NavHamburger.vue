@@ -10,9 +10,9 @@
         aria-label="Menu"
       />
       <div for="menu" class="hamburger-lines">
-        <span class="line line1 drop-shadow-xl"></span>
-        <span class="line line2 drop-shadow-xl"></span>
-        <span class="line line3 drop-shadow-xl"></span>
+        <span class="line line1 drop-shadow-2xl"></span>
+        <span class="line line2 drop-shadow-2xl"></span>
+        <span class="line line3 drop-shadow-2xl"></span>
       </div>
     </div>
   </header>
@@ -69,7 +69,7 @@ const isMenuOn = computed({
   height: 5px;
   width: 100%;
   border-radius: 10px;
-  background: rgb(206, 208, 249);
+  background: rgb(181, 184, 240);
 }
 
 .nav-container .hamburger-lines .line1 {
