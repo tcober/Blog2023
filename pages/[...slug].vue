@@ -4,13 +4,20 @@ const { slug } = useRoute().params;
 let local = runtimeConfig.local;
 useCookie(undefined, { sameSite: true });
 
+const story = await useStoryblok(slug ? slug.join("/") : "main", {
+  version: local === "true" ? "draft" : "public",
+});
+
 useHead({
   link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
   htmlAttrs: { lang: "en" },
-});
-
-const story = await useStoryblok(slug ? slug.join("/") : "main", {
-  version: local === "true" ? "draft" : "public",
+  title: story?.content?.title,
+  meta: [
+    {
+      name: "description",
+      content: story?.content?.teaser,
+    },
+  ],
 });
 </script>
 
