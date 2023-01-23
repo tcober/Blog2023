@@ -1,37 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Merriweather:wght@300;400;900&family=PT+Mono&display=swap");
 
-.article h1,
-.article h2,
-.article h3,
-.article h4,
-.article h5,
-.article h6 {
-  @apply max-w-screen-md mx-auto;
-}
-
-.article {
-  @apply mx-auto;
-}
-
-.article p {
-  @apply pb-4 text-lg max-w-3xl mx-auto;
-}
-
-.article h2 {
-  @apply text-3xl sm:text-4xl pb-6 pt-2;
-}
-
-.article .function_ {
-  color: rgb(175, 211, 255) !important;
-}
-
-code {
-  @apply opacity-0;
-}
-
-.hljs {
-  @apply opacity-100 transition-opacity;
-}
+/* Universal styles */
 
 h1 {
   font-family: "Lilita One", cursive;
@@ -68,12 +37,44 @@ a:hover {
   @apply text-violet-800;
 }
 
+/* Blog Post Styles */
+
+.article h1,
+.article h2,
+.article h3,
+.article h4,
+.article h5,
+.article h6 {
+  @apply max-w-screen-md mx-auto;
+}
+
+.article h2 {
+  @apply text-3xl sm:text-4xl pb-6 pt-2;
+}
+
+.article p {
+  @apply pb-4 text-lg max-w-3xl mx-auto;
+}
+
+.article .function_ {
+  color: rgb(175, 211, 255) !important;
+}
+
+.article code {
+  @apply opacity-0;
+}
+
+.article .hljs {
+  @apply opacity-100 transition-opacity;
+}
+
+/* Universal transition */
+
 .page-enter-active,
 .page-leave-active {
-  transition: all 0.15s ease-in-out;
+  @apply transition-opacity duration-150 ease-in-out;
 }
 .page-enter-from,
 .page-leave-to {
-  opacity: 0;
-  filter: blur(1rem);
+  @apply opacity-0;
 }
