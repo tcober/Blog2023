@@ -55,7 +55,6 @@ useHead({
 const resolvedRichText = computed(() =>
   renderRichText(props.blok.content, {
     resolver: (component, blok) => {
-      // console.log("I fired");
       switch (component) {
         case "blog-image":
           return `<component :blok='${JSON.stringify(blok)}'
@@ -72,41 +71,3 @@ const resolvedRichText = computed(() =>
 
 useSyntax();
 </script>
-
-<style scoped>
-.article {
-  @apply mx-auto;
-}
-
-.article p {
-  @apply pb-4 text-lg;
-}
-
-.article pre {
-  @apply mb-8 mt-4;
-}
-
-.article pre,
-code {
-  font-family: "PT Mono";
-  @apply max-w-4xl mx-auto min-w-0;
-}
-
-.article h2 {
-  @apply text-3xl sm:text-4xl pb-6 pt-2;
-}
-
-.article .function_ {
-  color: rgb(175, 211, 255) !important;
-}
-
-.fade-enter-active,
-.fade-leave-active {
-  @apply opacity-100 transition-opacity duration-1000 ease-in-out;
-}
-
-.v-enter-from,
-.fade-leave-to {
-  @apply opacity-0;
-}
-</style>
