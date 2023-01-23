@@ -70,7 +70,7 @@ a:hover {
 
 .page-enter-active,
 .page-leave-active {
-  @apply transition-opacity duration-150 ease-in-out;
+  @apply transition-opacity duration-700 ease-in-out;
 }
 .page-enter-from,
 .page-leave-to {
