@@ -15,7 +15,7 @@
         </h1>
         <p class="italic text-xs">
           created: {{ renderDate(dates.created) }} / last updated:
-          {{ renderDate(dates.created) }}
+          {{ renderDate(dates.lastUpdated) }}
         </p>
       </div>
       <h2
