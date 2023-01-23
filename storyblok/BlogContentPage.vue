@@ -8,12 +8,16 @@
       class="w-full h-[360px] lg:h-[450px] object-cover"
       placeholder
     />
-    <div class="container px-5 mx-auto mb-12">
-      <h1
-        class="text-5xl sm:text-6xl font-bold mt-12 mb-5 mx-auto max-w-screen-md"
-      >
-        {{ blok.title }}
-      </h1>
+    <div class="container px-5 mx-auto mb-12 mt-12 mx-auto max-w-screen-md">
+      <div class="mt-12 mb-5">
+        <h1 class="text-5xl sm:text-6xl font-bold">
+          {{ blok.title }}
+        </h1>
+        <p class="italic text-xs">
+          created: {{ renderDate(dates.created) }} / last updated:
+          {{ renderDate(dates.created) }}
+        </p>
+      </div>
       <h2
         class="text-3xl sm:text-4xl text-[#1d243d] font-light mb-4 mx-auto max-w-screen-md"
       >
@@ -42,7 +46,7 @@
 <script setup>
 import Vue3RuntimeTemplate from "vue3-runtime-template";
 import { useSyntax } from "~/composables/syntax";
-const props = defineProps({ blok: Object });
+const props = defineProps({ blok: Object, dates: Object });
 
 useHead({
   title: props.blok.title,
@@ -51,6 +55,11 @@ useHead({
     class: "blog",
   },
 });
+
+const renderDate = (date) => {
+  let dateArray = new Date(date).toDateString().split(" ");
+  return `${dateArray[1]} ${dateArray[2]}, ${dateArray[3]}`;
+};
 
 const resolvedRichText = computed(() =>
   renderRichText(props.blok.content, {
