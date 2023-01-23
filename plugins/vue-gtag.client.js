@@ -5,7 +5,7 @@ export default defineNuxtPlugin((nuxtApp) => {
     VueGtag,
     {
       config: {
-        id: "UA-43614936-1",
+        id: "G-ZJ8DPDM2QV",
       },
       bootstrap: false,
     },

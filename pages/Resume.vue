@@ -181,7 +181,7 @@
               </h4>
             </section>
           </div>
-          <OutsideInterests class="sm:hidden" />
+          <ResumeOutsideInterests class="sm:hidden" />
         </div>
         <div class="right-column sm:w-1/2 sm:pl-8">
           <div class="container">
