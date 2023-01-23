@@ -7,7 +7,6 @@ export default defineNuxtPlugin((nuxtApp) => {
       config: {
         id: "G-ZJ8DPDM2QV",
       },
-      bootstrap: false,
       deferScriptLoad: true,
     },
     nuxtApp.$router
