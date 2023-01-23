@@ -52,8 +52,8 @@ export default defineNuxtConfig({
     display: "auto",
     families: {
       "Lilita+One": true,
-      "PT+Monos": true,
-      Merriweather: [300, 400, 900],
+      "PT+Mono": true,
+      Merriweather: [300, 900],
     },
   },
   hooks: {
