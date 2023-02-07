@@ -12,5 +12,3 @@
 import { useNavStore } from "~/store/nav";
 let store = useNavStore();
 </script>
-
-<style scoped></style>

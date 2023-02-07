@@ -54,6 +54,18 @@ a:hover {
   @apply pb-4 text-lg max-w-3xl mx-auto;
 }
 
+.article ol li {
+  @apply list-decimal ml-4;
+}
+
+.article ul li {
+  @apply list-disc ml-4;
+}
+
+.article b {
+  @apply font-bold;
+}
+
 .article .function_ {
   color: rgb(175, 211, 255) !important;
 }
@@ -68,6 +80,16 @@ a:hover {
 
 .article p code {
   @apply px-2 py-1 bg-blue-900 text-white opacity-100 text-sm align-middle border rounded-lg;
+}
+
+.article pre {
+  @apply mb-8 mt-4;
+}
+
+.article pre,
+code {
+  font-family: "PT Mono";
+  @apply max-w-4xl mx-auto min-w-0;
 }
 
 /* Universal transition */
