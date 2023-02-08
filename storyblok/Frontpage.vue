@@ -32,6 +32,16 @@ const { data } = await storyblokApi.get("cdn/stories", {
   is_startpage: false,
 });
 articles.value = data.stories;
+useHead({
+  title: "Thomas Cober's personal blog and what not",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Blogging about stuff and showing off things I have done for probably no one.",
+    },
+  ],
+});
 </script>
 
 <style scoped>
