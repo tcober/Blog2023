@@ -3,7 +3,7 @@
     <FrontpageHeroCard
       :article="articles[0].content"
       :slug="articles[0].full_slug"
-      :created="articles[0].published_at"
+      :created="articles[0].first_published_at"
     />
     <div>
       <div class="grid md:grid-cols-2 gap-4 place-items-start">
@@ -12,7 +12,7 @@
           :key="article.uuid"
           :article="article.content"
           :slug="article.full_slug"
-          :created="article.published_at"
+          :created="article.first_published_at"
         />
       </div>
     </div>
