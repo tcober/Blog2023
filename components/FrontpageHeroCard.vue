@@ -1,7 +1,7 @@
 <template>
   <NuxtLink :to="`/${slug}/`" v-editable="article">
     <div
-      class="min-h-[500px] min-h-screen relative flex items-end justify-center my-4 mt-4 rounded-[5px] overflow-hidden"
+      class="h-screen relative flex items-end justify-center my-4 mt-4 rounded-[5px] overflow-hidden"
     >
       <FrontpageTitles
         :title="article.title"
