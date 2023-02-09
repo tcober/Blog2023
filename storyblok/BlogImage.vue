@@ -15,6 +15,6 @@ const props = defineProps({ blok: Object });
 
 <style scoped>
 img {
-  @apply mb-8 mt-4 max-w-4xl mx-auto w-full;
+  @apply mb-4 mt-4 max-w-4xl mx-auto w-full;
 }
 </style>
