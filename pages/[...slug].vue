@@ -11,18 +11,6 @@ const story = await useStoryblok(slug ? slug.join("/") : "main", {
 
 publishDates.created = story.value.first_published_at;
 publishDates.lastUpdated = story.value.published_at;
-
-useHead({
-  link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
-  htmlAttrs: { lang: "en" },
-  title: story?.content?.title,
-  meta: [
-    {
-      name: "description",
-      content: story?.content?.teaser,
-    },
-  ],
-});
 </script>
 
 <template>
