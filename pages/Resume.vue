@@ -11,7 +11,7 @@
           <div class="profile-pic mb-5 sm:mb-0 sm:mr-6">
             <nuxt-img
               preload
-              src="https://media-exp1.licdn.com/dms/image/C4D03AQF8SJ4bmgkcPQ/profile-displayphoto-shrink_400_400/0/1639881931562?e&#x3D;1676505600&amp;v&#x3D;beta&amp;t&#x3D;z6TbtRP3XVoT8bHxDdIA7FY5mm6Z3TbQPUADzE6Shy4"
+              src="https://a-us.storyblok.com/f/1002617/800x800/3cde4e7148/profile-pic.jpg"
               alt="profile-pic"
             />
           </div>
