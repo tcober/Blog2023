@@ -16,11 +16,7 @@ let data = reactive({ isLoaded: false });
 onMounted(() => {
   setTimeout(() => {
     data.isLoaded = true;
+    console.log("Hello");
   }, 1);
-});
-
-onBeforeUnmount(async () => {
-  data.isLoaded = false;
-  await setTimeout(() => {}, 1000);
 });
 </script>
