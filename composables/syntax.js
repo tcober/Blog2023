@@ -18,8 +18,6 @@ export function useSyntax() {
   });
 
   onMounted(() => {
-    setTimeout(() => {
-      hljs.highlightAll();
-    }, 750);
+    hljs.highlightAll();
   });
 }

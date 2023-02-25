@@ -14,9 +14,11 @@ publishDates.lastUpdated = story.value.published_at;
 </script>
 
 <template>
-  <StoryblokComponent
-    v-if="story"
-    :blok="story.content"
-    :dates="publishDates"
-  />
+  <PageTransition>
+    <StoryblokComponent
+      v-if="story"
+      :blok="story.content"
+      :dates="publishDates"
+    />
+  </PageTransition>
 </template>
