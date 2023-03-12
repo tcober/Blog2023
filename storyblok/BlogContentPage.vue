@@ -3,7 +3,7 @@
     <nuxt-img
       preload
       quality="90"
-      sizes="sm:640px md:768px lg:1024px xl:1500px"
+      sizes="xs:320px sm:640px md:768px lg:1024px xl:1280px xxl:1536px"
       v-if="blok.show_hero && blok.image.filename"
       :src="blok.image.filename"
       :alt="blok.image.alt"
