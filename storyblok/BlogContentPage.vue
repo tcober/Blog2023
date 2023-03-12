@@ -2,6 +2,7 @@
   <div v-if="resolvedRichText" v-editable="blok">
     <nuxt-img
       preload
+      sizes="sm:640px md:768px lg:1024px xl:1500px"
       v-if="blok.show_hero && blok.image.filename"
       :src="blok.image.filename"
       :alt="blok.image.alt"
