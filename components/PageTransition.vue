@@ -16,7 +16,6 @@ let data = reactive({ isLoaded: false });
 onMounted(() => {
   setTimeout(() => {
     data.isLoaded = true;
-    console.log("Hello");
   }, 1);
 });
 </script>
