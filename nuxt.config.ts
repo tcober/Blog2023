@@ -2,6 +2,9 @@
 export default defineNuxtConfig({
   app: {
     head: {
+      htmlAttrs: {
+        lang: "en",
+      },
       script: [
         {
           src: "https://www.googletagmanager.com/gtag/js?id=G-ZJ8DPDM2QV",
