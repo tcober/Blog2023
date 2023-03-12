@@ -12,6 +12,7 @@
 
     <nuxt-img
       preload
+      quality="70"
       sizes="sm:640px md:768px lg:1024px xl:1500px"
       :src="article.image.filename"
       :alt="article.image.alt"

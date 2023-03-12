@@ -1,6 +1,7 @@
 <template>
   <nuxt-img
     preload
+    quality="70"
     sizes="sm:640px md:768px lg:1024px xl:1500px"
     provider="storyblok"
     format="webp"
