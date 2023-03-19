@@ -18,4 +18,8 @@ onMounted(() => {
     data.isLoaded = true;
   }, 1);
 });
+
+onBeforeUnmount(() => {
+  data.isLoaded = false;
+});
 </script>
