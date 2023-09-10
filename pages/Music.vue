@@ -33,6 +33,13 @@ useHead({
     class: "music",
   },
 });
+
+definePageMeta({
+  pageTransition: {
+    name: "page",
+    mode: "out-in",
+  },
+});
 </script>
 
 <style scoped>

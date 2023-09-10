@@ -27,6 +27,7 @@
       </h2>
       <div class="article">
         <Vue3RuntimeTemplate
+          ref="content"
           :key="blok.id"
           v-if="resolvedRichText"
           :template="resolvedRichText"
@@ -47,8 +48,8 @@
 
 <script setup>
 import Vue3RuntimeTemplate from "vue3-runtime-template";
-import { useSyntax } from "~/composables/syntax";
 const props = defineProps({ blok: Object, dates: Object });
+import { useSyntax } from "~/composables/syntax";
 
 useHead({
   title: props.blok.title,
@@ -62,6 +63,8 @@ const renderDate = (date) => {
   let dateArray = new Date(date).toDateString().split(" ");
   return `${dateArray[1]} ${dateArray[2]}, ${dateArray[3]}`;
 };
+
+const content = ref(null);
 
 const resolvedRichText = computed(() =>
   renderRichText(props.blok.content, {
@@ -80,5 +83,7 @@ const resolvedRichText = computed(() =>
   })
 );
 
-useSyntax();
+onMounted(() => {
+  useSyntax();
+});
 </script>

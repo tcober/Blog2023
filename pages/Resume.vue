@@ -336,6 +336,12 @@ useHead({
     class: "resume",
   },
 });
+definePageMeta({
+  pageTransition: {
+    name: "page",
+    mode: "out-in",
+  },
+});
 </script>
 
 <style scoped>

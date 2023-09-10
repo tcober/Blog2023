@@ -1,4 +1,5 @@
 <script setup>
+import { useSyntax } from "~/composables/syntax";
 const runtimeConfig = useRuntimeConfig();
 const { slug } = useRoute().params;
 let local = runtimeConfig.local;
@@ -11,6 +12,15 @@ const story = await useStoryblok(slug ? slug.join("/") : "main", {
 
 publishDates.created = story.value.first_published_at;
 publishDates.lastUpdated = story.value.published_at;
+definePageMeta({
+  pageTransition: {
+    name: "page",
+    mode: "out-in",
+    onAfterEnter: (el) => {
+      useSyntax();
+    },
+  },
+});
 </script>
 
 <template>

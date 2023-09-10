@@ -100,7 +100,7 @@ code {
 
 .page-enter-active,
 .page-leave-active {
-  @apply transition-all duration-[650ms] ease-in-out translate-y-0;
+  @apply transition-all duration-[450ms] ease-in-out translate-y-0;
 }
 .page-enter-from,
 .page-leave-to {

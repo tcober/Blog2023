@@ -1,6 +1,6 @@
 <template>
   <div>
-    <pre><code :class="`language-${props.blok.language}`" v-html="escape(props.blok.code)"></code></pre>
+    <pre><code ref="code-block" :class="`language-${props.blok.language}`" v-html="escape(props.blok.code)"></code></pre>
   </div>
 </template>
 

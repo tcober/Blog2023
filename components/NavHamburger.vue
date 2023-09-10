@@ -19,7 +19,7 @@
 </template>
 
 <script setup>
-import { useNavStore } from "~/store/nav";
+import { useNavStore } from "../store/nav";
 let store = useNavStore();
 const emit = defineEmits(["showMenu"]);
 const isMenuOn = computed({
