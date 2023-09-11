@@ -12,6 +12,10 @@
             preload
             src="https://a-us.storyblok.com/f/1002617/800x800/3cde4e7148/profile-pic.jpg"
             alt="profile-pic"
+            provider="storyblok"
+            format="webp"
+            placeholder
+            quality="70"
           />
         </div>
         <div class="flex flex-col sm:flex-row sm:items-end justify-start">
