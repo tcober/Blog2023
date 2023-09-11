@@ -55,7 +55,7 @@ a:hover {
 }
 
 .article h3 {
-  @apply text-2xl sm:text-3xl pb-3 pt-2;
+  @apply text-2xl sm:text-3xl sm:pb-3 pb-1.5 pt-1 sm:pt-2;
 }
 
 .article p {
