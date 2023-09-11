@@ -18,7 +18,7 @@
   </div>
   <div v-else class="relative z-10 w-full text-center py-6 bottom-2 px-6">
     <h2
-      class="drop-shadow-xl text-5xl sm:text-4xl text-white display font-bold mb-1 mx-auto"
+      class="drop-shadow-xl text-5xl sm:text-4xl text-white display-font font-bold mb-1 mx-auto"
     >
       {{ title }}
     </h2>

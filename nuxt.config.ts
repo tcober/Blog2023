@@ -1,10 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
-    // pageTransition: {
-    //   name: "page",
-    //   mode: "out-in",
-    // },
     head: {
       htmlAttrs: {
         lang: "en",
@@ -18,7 +14,7 @@ export default defineNuxtConfig({
       ],
     },
   },
-  //eslint-disable-next-line @typescript-eslint/no-unused-vars
+  //eslint-disable-next-line @typescript-eslint/no-var-requires
   buildEnvironment: process.env.BUILD_ENV,
   runtimeConfig: {
     public: {

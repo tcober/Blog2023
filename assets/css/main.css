@@ -21,12 +21,6 @@ li {
   @apply font-light;
 }
 
-.display {
-  font-family: "Lilita One", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
 a {
   @apply text-blue-700;
 }
@@ -36,6 +30,11 @@ a:hover {
 }
 
 /* Blog Post Styles */
+.display-font {
+  font-family: "Lilita One", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 
 .article h1,
 .article h2,
@@ -46,8 +45,13 @@ a:hover {
   @apply max-w-screen-md mx-auto;
 }
 
+.article h1,
 .article h2 {
-  @apply text-2xl sm:text-4xl pb-6 pt-2;
+  @apply text-2xl sm:text-4xl;
+}
+
+.article h2 {
+  @apply pb-6 pt-2;
 }
 
 .article h3 {
@@ -55,7 +59,7 @@ a:hover {
 }
 
 .article p {
-  @apply pb-4 text-[17px] sm:text-lg max-w-3xl mx-auto;
+  @apply pb-4 text-[17px] leading-7 sm:leading-8 sm:text-lg max-w-3xl mx-auto;
 }
 
 .article ol li {
@@ -100,7 +104,7 @@ code {
 
 .page-enter-active,
 .page-leave-active {
-  @apply transition-all duration-[450ms] ease-in-out translate-y-0;
+  @apply transition-all duration-[300ms] ease-in-out translate-y-0;
 }
 .page-enter-from,
 .page-leave-to {

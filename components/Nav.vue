@@ -11,21 +11,21 @@
           <li @click="store.closeMenu">
             <NuxtLink
               to="/"
-              class="display text-5xl text-white hover:text-[#50b0ae]"
+              class="display-font text-5xl text-white hover:text-[#50b0ae]"
               >Blog</NuxtLink
             >
           </li>
           <li @click="store.closeMenu">
             <NuxtLink
               to="/music"
-              class="display text-5xl text-white hover:text-[#50b0ae]"
+              class="display-font text-5xl text-white hover:text-[#50b0ae]"
               >Music</NuxtLink
             >
           </li>
           <li @click="store.closeMenu">
             <NuxtLink
               to="/resume"
-              class="display text-5xl text-white hover:text-[#50b0ae]"
+              class="display-font text-5xl text-white hover:text-[#50b0ae]"
               >Resume</NuxtLink
             >
           </li>
