@@ -41,26 +41,19 @@ export default defineNuxtConfig({
       "2xl": 1536,
     },
   },
-  modules: [
-    [
-      "@storyblok/nuxt",
-      {
-        accessToken: process.env.STORYBLOK_TOKEN,
-        apiOptions: { region: "us" },
-        useApiClient: true,
-      },
-    ],
-    [
-      "@pinia/nuxt",
-      {
-        autoImports: ["defineStore"],
-      },
-    ],
-    "@nuxtjs/robots",
-    "@nuxtjs/tailwindcss",
-    "@nuxtjs/google-fonts",
-    "@nuxt/image",
-  ],
+  modules: [[
+    "@storyblok/nuxt",
+    {
+      accessToken: process.env.STORYBLOK_TOKEN,
+      apiOptions: { region: "us" },
+      useApiClient: true,
+    },
+  ], [
+    "@pinia/nuxt",
+    {
+      autoImports: ["defineStore"],
+    },
+  ], "@nuxtjs/robots", "@nuxt/image-edge", "@nuxtjs/tailwindcss", "@nuxtjs/google-fonts", "@nuxt/image"],
   build: {
     transpile: [
       "@fortawesome/vue-fontawesome",
