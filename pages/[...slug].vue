@@ -1,4 +1,5 @@
 <script setup>
+import { useSyntax } from "~/composables/syntax";
 const runtimeConfig = useRuntimeConfig();
 const { slug } = useRoute().params;
 let local = runtimeConfig.local;
@@ -19,6 +20,9 @@ definePageMeta({
   pageTransition: {
     name: "page",
     mode: "out-in",
+    onAfterEnter: () => {
+      useSyntax();
+    },
   },
 });
 </script>
