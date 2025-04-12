@@ -6,6 +6,7 @@
       :slug="articles[0].full_slug"
       :created="articles[0].first_published_at"
     />
+    <h1 class="text-3xl font-bold text-center mt-8 mb-4">Latest articles</h1>
     <!-- Make the sub cards -->
     <div>
       <div class="grid md:grid-cols-2 gap-4 place-items-start">
